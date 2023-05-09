@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GTA 5</title>
+    <link rel="stylesheet" href="style/GTA5.css">
+    <link rel="stylesheet" href="style/MainStyle.css">
+    <link rel="icon" href="gta5-icon.png"> 
+    <script>
+        window.addEventListener('scroll', function() {
+            var elements = document.querySelectorAll('.animation');
+            var windowHeight = window.innerHeight;
+            elements.forEach(function(element) {
+                var position = element.getBoundingClientRect().top;
+                if (position < windowHeight) {
+                    element.style.opacity = "1";
+                    element.style.transform = "translateY(0)";
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><button class="button">Strona Główna</button></a>
+        <a href="GTA5.html"><button class="button active">GTA 5</button></a>
+        <a href="GTA6.html"><button class="button">GTA 6</button></a>  
+        <a href="GTAInfo.html"><button class="button">Ciekawostki</button></a>
+    </header>
+    <main>
+        <div class="clear-paragraph animation">
+            <img src="photo_gta5_1.jpg" alt="Zdjęcie GTA" class="left-photo">
+            <h2>O grze GTA 5</h2>
+            <p>Grand Theft Auto V (GTA 5) to otwarty świat akcji i przygody wideo, stworzony przez Rockstar North i wydany przez Rockstar Games. Gra została wydana 17 września 2013 roku na PlayStation 3 i Xbox 360, a 18 listopada 2014 roku na PlayStation 4 i Xbox One. Akcja gry toczy się w fikcyjnym stanie San Andreas, który jest oparty na Południowej Kalifornii, a gracze mają swobodę eksplorowania świata i wykonywania misji we własnym tempie.</p>
+		</div>
+
+        <div class="clear-paragraph animation">
+            <br><br><br>
+            <img src="photo_gta5_2.jpg" alt="Zdjęcie GTA" class="right-photo">
+            <h2>Rozgrywka</h2>
+            <p>GTA 5 posiada trzech grywalnych protagonistów - Michaela De Santę, Franklina Clintona i Trevora Philipsa - każdy z nich ma swoje unikalne umiejętności i zdolności. Gracze mogą przełączać się między trzema postaciami w dowolnym momencie gry, zarówno w trakcie misji, jak i poza nimi. Gra zawiera również tryb wieloosobowy, zwany Grand Theft Auto Online, który umożliwia graczom tworzenie i dostosowywanie swojej własnej postaci oraz eksplorowanie świata GTA 5 z innymi graczami.</p>
+		</div>
+
+        <div class="clear-paragraph animation">
+            <br><br><br>
+            <img src="photo_gta5_3.jpg" alt="Zdjęcie GTA" class="left-photo">
+            <h2>Odbiór i nagrody</h2>
+            <p>GTA 5 otrzymało pozytywne recenzje po premierze, a wiele recenzentów chwaliło otwarty świat gry, fabułę i postacie. Gra zdobyła wiele nagród, w tym tytuł Gry Roku w kilku publikacjach. Gra była również sukcesem komercyjnym, sprzedając ponad 140 milionów kopii na całym świecie do 2021 roku, co czyni ją jedną z najlepiej sprzedających się gier wideo wszech czasów.</p>
+        </div>
+
+        <div class="clear-paragraph animation">
+            <br><br><br>
+		    <h2>Ciekawostki</h2>
+            <ul>
+                <li>GTA 5 była najdroższą grą wideo, jaką kiedykolwiek wyprodukowano w czasie premiery, jej koszt produkcji wyniósł około 265 milionów dolarów.</li>
+                <li>Ścieżka dźwiękowa gry zawiera muzykę z ponad 20 różnych stacji radiowych, z gatunkami muzyki od hip-hopu do rocka i muzyki elektronicznej.</li>
+                <li>GTA 5 zawiera wiele odniesień do kultury popularnej, w tym filmów, programów telewizyjnych i innych gier wideo.</li>
+            </ul>
+        </div>
+	</main>
+	
+	<footer>
+		<p>© 2023 Informacje o GTA 5</p>
+		<p>Źródła: <a href="https://pl.wikipedia.org/wiki/Grand_Theft_Auto_V">Wikipedia</a>, <a href="https://www.rockstargames.com/V/">Rockstar Games</a></p>
+	</footer>
+</body> 
+</html>

@@ -1,0 +1,23 @@
+.left-photo {
+    float: left;
+    margin-right: 20px;
+    max-width: 250px;
+    height: 250px;
+  }
+
+  .right-photo {
+    float: right;
+    margin-left: 20px;
+    max-width: 250px;
+    height: 250px;
+  }
+
+  .clear-paragraph {
+    clear:both;
+  }
+
+  .animation {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2s ease, transform 2s ease;
+}

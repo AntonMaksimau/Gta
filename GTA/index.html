@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GTA</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/MainStyle.css">
+    <link rel="icon" href="gta-icon.png">
+    <script>
+        window.addEventListener('scroll', function() {
+            var elements = document.querySelectorAll('.animation');
+            var windowHeight = window.innerHeight;
+            elements.forEach(function(element) {
+                var position = element.getBoundingClientRect().top;
+                if (position < windowHeight) {
+                    element.style.opacity = "1";
+                    element.style.transform = "translateY(0)";
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><button class="button active">Strona Główna</button></a>
+        <a href="GTA5.html"><button class="button">GTA 5</button></a>
+        <a href="GTA6.html"><button class="button">GTA 6</button></a>  
+        <a href="GTAInfo.html"><button class="button">Ciekawostki</button></a>
+    </header>
+    <main>
+        <div class="clear-paragraph animation">
+            <img src="photo_index_1.jpg" alt="Zdjęcie GTA" class="left-photo">
+            <h2>O GTA</h2>
+            <p>GTA to seria popularnych gier komputerowych, które zostały stworzone przez firmę Rockstar Games. Gry te znane są z otwartego świata, w którym gracz może swobodnie poruszać się, wykonywać misje i działać na własną rękę. W grach GTA gracz często wciela się w postać przestępcy, który musi radzić sobie z różnymi wyzwaniami i przeciwnikami. Seria GTA to jedna z najbardziej znanych i wpływowych serii gier w historii przemysłu rozrywkowego. Wraz z każdą nową częścią, gra stała się coraz bardziej skomplikowana i zyskiwała nowe funkcje, takie jak tryb wieloosobowy i rozbudowane narzędzia modowania. Gra jest również znana ze swojego kontrowersyjnego charakteru, co przyciąga uwagę mediów i fanów serii. Wiele elementów gry, takich jak przemoc, seksualność i wulgaryzmy, stało się przedmiotem debat i kontrowersji.</p>
+		</div>
+
+        <div class="clear-paragraph animation">
+            <br><br><br>
+            <img src="photo_index_2.jpg" alt="Zdjęcie GTA" class="right-photo">
+            <h2>Historia serii</h2>
+            <p>Pierwsza gra z serii GTA została wydana w 1997 roku. Była to gra 2D, która umożliwiała graczowi poruszanie się po fikcyjnym mieście i wykonywanie różnych zadań. Po sukcesie pierwszej gry, firma Rockstar Games wydała wiele kolejnych części, które ulepszały grafikę i rozgrywkę. Najnowsza część serii - GTA 5 - została wydana w 2013 roku i cieszy się nadal dużą popularnością.</p>
+		</div>
+
+        <div class="clear-paragraph animation">
+            <br><br><br>
+            <img src="photo_index_3.jpg" alt="Zdjęcie GTA" class="left-photo">
+		    <h2>Popularność i kontrowersje</h2>
+		    <p>Seria GTA zyskała dużą popularność na całym świecie, ale jednocześnie była też krytykowana za przemoc i wulgaryzmy, które występują w grze. W wielu krajach, takich jak Australia czy Niemcy, gry z serii GTA zostały ocenzurowane lub zakazane. Mimo to, seria GTA nadal cieszy się dużą popularnością i uznaniem wśród graczy.</p>
+        </div>
+
+    </main>
+    <footer class="clear-paragraph">
+		<p>© 2023 Informacje o GTA</p>
+		<p>Źródła: <a href="https://pl.wikipedia.org/wiki/Grand_Theft_Auto">Wikipedia</a>, <a href="https://www.rockstargames.com/">Rockstar Games</a></p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <title>GTA 6</title> 
+        <link rel="stylesheet" href="style/gta6.css">
+        <link rel="stylesheet" href="style/MainStyle.css">
+        <link rel="icon" href="gta6-icon.png">
+        <script>
+            window.addEventListener('scroll', function() {
+                var elements = document.querySelectorAll('.animation');
+                var windowHeight = window.innerHeight;
+                elements.forEach(function(element) {
+                    var position = element.getBoundingClientRect().top;
+                    if (position < windowHeight) {
+                        element.style.opacity = "1";
+                        element.style.transform = "translateY(0)";
+                    }
+                });
+            });
+        </script> 
+    </head> 
+    <body> 
+        <header>
+            <a href="index.html"><button class="button">Strona Główna</button></a>
+            <a href="GTA5.html"><button class="button">GTA 5</button></a>
+            <a href="GTA6.html"><button class="button active">GTA 6</button></a>  
+            <a href="GTAInfo.html"><button class="button">Ciekawostki</button></a>
+        </header>
+        <main>
+            <div class="clear-paragraph animation">
+                <img src="photo_gta6_1.jpg" alt="Zdjęcie GTA" class="left-photo">
+                <h2>O grze GTA 6</h2>
+                <p>Grand Theft Auto VI (GTA 6) to nadchodząca gra wideo z otwartym światem akcji i przygody, stworzona przez Rockstar North i wydana przez Rockstar Games. Gra jest w trakcie produkcji i na razie nie ma oficjalnej daty premiery. Mimo to, wiele plotek sugeruje, że gra będzie się odbywać w fikcyjnym mieście Vice City, które jest oparte na Miami, a także w fikcyjnym stanie południowej Florydy.</p>
+            </div>
+
+            <div class="clear-paragraph animation">
+                <br><br><br>
+                <img src="photo_gta6_2.jpg" alt="Zdjęcie GTA" class="right-photo">
+                <h2>Przecieki i plotki</h2>
+                <p>Pomimo braku oficjalnych informacji na temat gry, wiele przecieków i plotek sugeruje, że GTA 6 będzie miało jeszcze większy otwarty świat niż GTA 5, a także nowe funkcje, takie jak możliwość kupowania nieruchomości i prowadzenia własnego biznesu. Plotki sugerują również, że gra będzie miała tylko jedną główną postać, a nie kilka, jak w przypadku GTA 5.</p>
+            </div>
+
+            <div class="clear-paragraph animation">
+                <br><br><br>
+                <h2>Ciekawostki</h2>
+                <ul>
+                    <li>Według plotek, Rockstar Games zatrudniło specjalistów ds. sztucznej inteligencji, aby ulepszyć zachowanie postaci niezależnych i poprawić realizm świata gry.</li>
+                    <li>Według kilku źródeł, produkcja gry rozpoczęła się już w 2014 roku, zaraz po premierze GTA 5.</li>
+                    <li>Rockstar Games nie udzieliło żadnych oficjalnych informacji na temat gry, ale wiele osób oczekuje, że gra zostanie wydana na konsolach nowej generacji, takich jak PlayStation 5 i Xbox Series X.</li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <p>© 2023 Informacje o GTA 6</p>
+            <p>Źródła: 
+                <a href="https://pl.wikipedia.org/wiki/Grand_Theft_Auto_VI">Wikipedia</a>, 
+                <a href="https://www.rockstargames.com/">Rockstar Games</a>
+            </p>
+        </footer>
+</html>
